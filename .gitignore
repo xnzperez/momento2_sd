@@ -1,0 +1,26 @@
+# Ignorar archivos de compilación
+*.class
+*.o
+*.out
+*.exe
+
+# Ignorar archivos de configuración del IDE
+/.idea/
+/.vscode/
+/*.sublime-project
+/*.sublime-workspace
+
+# Ignorar archivos de logs
+*.log
+
+# Ignorar archivos temporales
+*~
+*.tmp
+*.temp
+
+# Ignorar archivos de entorno
+.env
+
+# Ignorar dependencias
+/node_modules/
+/vendor/
