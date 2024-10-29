@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Resultados de Búsqueda</title>
+</head>
+<body>
+    <h1>Resultados para "{{ query }}"</h1>
+    <ul>
+        {% for result in results %}
+        <li><a href="{% url 'entry' result %}">{{ result }}</a></li>
+        {% empty %}
+        <li>No se encontraron resultados.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
