@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Editar {{ title }}</title>
+</head>
+<body>
+    <h1>Editar {{ title }}</h1>
+    <form action="{% url 'edit_entry' title %}" method="post">
+        {% csrf_token %}
+        <textarea name="content" rows="10" required>{{ content }}</textarea>
+        <button type="submit">Guardar cambios</button>
+    </form>
+</body>
+</html>

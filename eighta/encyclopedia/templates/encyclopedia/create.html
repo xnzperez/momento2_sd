@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Crear nueva entrada</title>
+</head>
+<body>
+    <h1>Crear nueva entrada</h1>
+    <form action="{% url 'create_entry' %}" method="post">
+        {% csrf_token %}
+        <label for="title">Título:</label>
+        <input type="text" name="title" id="title" required>
+        
+        <label for="content">Contenido:</label>
+        <textarea name="content" id="content" rows="10" required></textarea>
+        
+        <button type="submit">Guardar</button>
+    </form>
+</body>
+</html>
