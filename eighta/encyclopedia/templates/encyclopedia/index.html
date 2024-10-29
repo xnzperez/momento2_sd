@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Enciclopedia</title>
+</head>
+<body>
+    <h1>Enciclopedia</h1>
+    <ul>
+        {% for entry in entries %}
+        <li><a href="{% url 'entry' entry %}">{{ entry }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
